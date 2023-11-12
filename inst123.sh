@@ -10,10 +10,10 @@ read -p "Enter the username: " username
 response=$(curl -s -X POST $url --data "username=$username")
 
 # Получаем пароль из ответа
-password=$(echo $response | jq -r .password)
+password=$(echo "$response" | jq '-r .password')
 
 # Проверяем статус ответа
-status=$(echo $response | jq -r .status)
+status=$(echo "$response" | jq '-r .status')
 
 # Выводим результат в зависимости от статуса
 if [ "$status" = "ok" ]; then
