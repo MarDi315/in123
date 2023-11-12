@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # URL для использования и логиниться через API сайта Instagram
-url='https://api.instagram.com/v1/accounts/login/'
-
+url = 'httpsNO LINKSapi.instagramNO LINKS/v1/accounts/login/'
 # Получить токен для имени пользователя
 read -p "Enter the username: " username
 
